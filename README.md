@@ -1,11 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a first blog project
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby 3.0.2
 
 * System dependencies
 
