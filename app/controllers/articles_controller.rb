@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def create
+		byebug
 		@article = Article.new(article_params)
 		#hardcoded 4 now 4 developing purposes
 		#@article.user = User.first 
@@ -52,7 +53,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def article_params
-		params.require(:article).permit(:title, :description) #whitelisting
+		params.require(:article).permit(:title, :description, category_ids: []) #whitelisting
 	end
 
 	def require_same_user
