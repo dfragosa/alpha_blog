@@ -15,7 +15,6 @@ class ArticlesController < ApplicationController
 	end
 
 	def create
-		byebug
 		@article = Article.new(article_params)
 		#hardcoded 4 now 4 developing purposes
 		#@article.user = User.first 
